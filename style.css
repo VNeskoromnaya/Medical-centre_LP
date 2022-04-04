@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@400;500;600;700&family=Nunito&family=Playfair+Display:wght@700&family=Poppins:wght@600&family=Raleway&family=Roboto:wght@300;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        '. header .'
+        '. main .'
+        '. footer .';
+    grid-template-columns: 165px 1fr 165px;
+    grid-template-rows: 79px 1fr 284px;
+}
+
+/* --- Типография --- */
+
+
+
+
+/* --- HEADER --- */
+header {
+    grid-area: header;
+    /* max-width: 1440px; */
+    height: auto;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 0 9px 0;
+}
+
+.header_wrapper .slogan,
+.header_wrapper .office-hours,
+.header_wrapper .contacts {
+    font-family: 'Inter';
+    font-size: 13px;
+    color: rgba(63, 138, 191, 1);
+}
+
+.header_wrapper .slogan {
+    max-width: 247px;
+    height: 64px;
+    margin-left: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 16.5px;
+}
+
+.header_wrapper .office-hours {
+    display: block;
+    max-width: 163px;
+    margin-left: 295px;
+    line-height: 20.5px;
+}
+
+.header_wrapper .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 19px;
+}
+
+.header_wrapper .contacts>span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.header_wrapper .contacts a {
+    display: flex;
+}
+
+
+
+/* --- MAIN --- */
