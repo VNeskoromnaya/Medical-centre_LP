@@ -127,6 +127,7 @@ main {
 .intro-wrapper {
     width: 100%;
     height: 700px;
+    position: relative;
     display: flex;
     background-color: #F8FAFF;
     padding: 85px 165px 85px 165px;
@@ -148,6 +149,8 @@ main {
 
 .intro-wrapper .intro-wrapper__left .title_intro {
     text-align: start;
+    margin: 0;
+    padding: 13px 0;
 }
 
 .intro-wrapper .intro-wrapper__left .text_span__small {
@@ -172,7 +175,6 @@ main {
     text-align: center;
     padding-top: 15px;
     background: #FFFFFF;
-
     border-radius: 14px;
 }
 
@@ -201,14 +203,66 @@ main {
 }
 
 .intro-wrapper .intro-wrapper__right {
+    /* position: relative;; */
     display: flex;
     flex-direction: row;
+    margin-left: 90px;
 }
 
 .intro-wrapper .intro-wrapper__right .intro-wrapper-photo {
+    width: 418px;
+    height: 482px;
     border-bottom-left-radius: 43px;
     border-top-right-radius: 74px;
-    box-shadow: 15px 11px 1px #6CC2F1;
+    box-shadow: 16px 12px 1px #6CC2F1;
+}
+
+.intro-wrapper .intro-video {
+    position: absolute;
+    width: 311px;
+    height: 99px;
+    bottom: 86px;
+    left: 660px;
+    background: rgba(255, 255, 255, 0.37);
+    border: 1px solid #9BCFF9;
+    box-sizing: border-box;
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 24px 25px 20px;
+}
+
+.intro-wrapper .intro-video:hover {
+    /* box-shadow: 0px 4px 23px rgba(197, 197, 197, 0.25); */
+    box-shadow: 0px 4px 19px rgba(73, 134, 169, 0.44);
+}
+
+.intro-wrapper .intro-video .intro-video-btn {
+    border: none;
+    background: none;
+    /* height: 32px; */
+}
+
+.intro-wrapper .intro-video .intro-video-btn >img:hover {
+    background-color: #9cd1ed65;
+    border-radius: 15px;
+    transform: scale(1.2);
+}
+
+.intro-wrapper .intro-video .intro-video-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.intro-wrapper .intro-video .intro-video-text >span {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
 }
 
 /* END --- Intro-wrapper --- */
@@ -290,3 +344,16 @@ main {
 }
 
 /* END --- Что лечим? --- */
+
+/* --- Факты --- */
+.facts-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facts-block .title {
+    width: 824px;
+    
+
+}
